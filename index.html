@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>PIZZARITO</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container__cabecalho">
+            <div class="cabecalho__logo">
+                <a href=""><i class="fa fa-rebel fa-3x icone__cor" aria-hidden="true"></i></a>
+            </div>
+            <div class="cabecalho__icones">
+                <div class="avatar__usuario">
+                    <a href="./login.html"><i class="fa fa-user-circle-o fa-3x icone__cor" aria-hidden="true"></i></a>
+                    <span class="nome__login"></span>
+                </div>
+                <a href="./favoritos.html"><i class="fa fa-heart-o fa-3x icone__cor" aria-hidden="true"></i></a>
+                <div class="carrinho" id="myBtn">
+                    <span class="carrinho__contador">0</span>
+                    <i class="fa fa-shopping-cart fa-3x icone__cor" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="cabecalho__links">
+        <span><a href="./index.html">PIZZAS</a></span>
+        <span><a href="./bebidas.html">BEBIDAS</a></span>
+        <span><a href="./doces.html">DOCES</a></span>
+    </div>
+    <section class="banner">
+        <div>
+        <h2 class="banner__titulo">Está com fome?</h2>
+        </div>
+        <p class="banner__texto">Encontre em nosso pizzaria as melhores pizzas de São Paulo!</p>
+    </section>
+    <section class="carrosel">
+        <h2 class="carrossel__titulo">mais vendidas</h2>
+            <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+           
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-swiper-autoplay="2000"><img src="img/4-queijos.jpg" alt="Pizza 4 queijos"></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><img src="img/Pizza+Calabresa.jpg" alt="Pizza de Calabresa"></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><img src="img/Pizza+de+Portuguesa.jpeg" alt="Pizza de Portuguesa"></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><img src="img/Matgarita.jpg" alt="Pizza de Matgarita"></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><img src="img/Mussarela.jpg" alt="Pizza de Mussarela"></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><img src="img/pizza-chocolate.jpg" alt="Pizza de Chocolate"></div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2 class="menu__titulo">Escolha a sua pizza</h2>
+        <div class="menu__card">
+            <div class="card__imagem">
+                <img class="menu__imagem" src="img/4-queijos.jpg" alt="Pizza de 4 queijos">
+                <button class="favorito" onclick="favoritar(0)"><i class="fa fa-heart-o fa-1x" id="heart__0" aria-hidden="true"></i></button>
+            </div>
+            <p class="menu__texto">Pizza de 4 queijos</p>
+            <div class="card">
+                <span>R$99,99</span>
+            </div>  
+            <button class="menu__button" onclick="adicionarPizza(0)">Adicionar</button>
+        </div>
+
+        <div class="menu__card">
+            <div class="card__imagem">
+                <img class="menu__imagem" src="img/Matgarita.jpg" alt="Pizza de Margarita">
+                <button class="favorito" onclick="favoritar(1)"><i class="fa fa-heart-o fa-1x" id="heart__1" aria-hidden="true"></i></button>
+            </div>
+            <p class="menu__texto">Pizza de Margarita</p>
+            <div class="card">
+                <span>R$119,99</span>
+            </div>  
+            <button class="menu__button" onclick="adicionarPizza(1)">Adicionar</button>
+        </div>
+        
+        <div class="menu__card">
+            <div class="card__imagem">
+                <img class="menu__imagem" src="img/Mussarela.jpg" alt="Pizza de Mussarela">
+                <button class="favorito" onclick="favoritar(2)"><i class="fa fa-heart-o fa-1x" id="heart__2" aria-hidden="true"></i></button>
+            </div>
+            <p class="menu__texto">Pizza de Mussarela</p>
+            <div class="card">
+                <span>R$29,99</span>
+            </div>  
+            <button class="menu__button" onclick="adicionarPizza(2)">Adicionar</button>
+        </div>
+
+        <div class="menu__card">
+            <div class="card__imagem">
+                <img class="menu__imagem" src="img/Pizza+Calabresa.jpg" alt="Pizza de Calabresa">
+                <button class="favorito" onclick="favoritar(3)"><i class="fa fa-heart-o fa-1x" id="heart__3" aria-hidden="true"></i></button>
+            </div>
+            <p class="menu__texto">Pizza de Calabresa</p>
+            <div class="card">
+                <span>R$49,99</span>
+            </div>  
+            <button class="menu__button" onclick="adicionarPizza(3)">Adicionar</button>
+        </div>
+
+        <div class="menu__card">
+            <div class="card__imagem">
+                <img class="menu__imagem" src="img/pizza-chocolate.jpg" alt="Pizza de Chocolate">
+                <button class="favorito" onclick="favoritar(4)"><i class="fa fa-heart-o fa-1x" id="heart__4" aria-hidden="true"></i></button>
+            </div>
+            <p class="menu__texto">Pizza de Chocolate</p>
+            <div class="card">
+                <span>R$69,99</span>
+            </div>  
+            <button class="menu__button" onclick="adicionarPizza(4)">Adicionar</button>
+        </div>
+        
+
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div>
+                <p class="footer__texto">Gabriel Ito desenvolvimento de software LTD.</p>
+            </div>
+            <div>
+                <p class="titulo__redes">Redes sociais:</p>
+            </div>
+            <div class="container__redes">
+                <a href="#"><i class="fa fa-instagram fa-4x redes"  aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-facebook-square fa-4x redes" aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-whatsapp fa-4x redes" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+    </footer>
+     
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Seu carrinho:</h2>
+            </div>
+            <div class="modal-body" id="carrinhoBody"></div>
+            <div class="modal-footer">
+              <button class="botao__modal" onclick="fecharCompra()">Finalizar compra</button>
+              <button class="botao__modal">Fechar</button>
+            </div>
+        </div>  
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/zapzap.js"></script>
+    <script src="scripts/avatar.js"></script>
+
+</html>

@@ -1,0 +1,33 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/icones.css");
+@import url("styles/carrossel.css");
+@import url("styles/menu.css");
+@import url("styles/footer.css");
+@import url("styles/modal.css");
+@import url("styles/login/login.css");
+@import url("styles/login/registro.css");
+
+:root
+{
+    --cor-de-fundo:#ffffff;
+    --branco:#FFFFFF;
+}
+
+body
+{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #000000;
+}

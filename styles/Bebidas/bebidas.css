@@ -1,0 +1,19 @@
+@import url("../../style.css");
+
+.cabecalho
+{
+    background-color: #076DE8;
+    box-shadow: inset 0 0 0.5em #052bd3;
+} 
+
+.menu
+{
+    background-color: #076DE8;
+    box-shadow: inset 0 0 2em #052bd3;
+}
+
+.footer 
+{
+    background-color: #076DE8;
+    box-shadow: inset 0 0 2em #052bd3;
+}

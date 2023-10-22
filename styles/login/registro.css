@@ -1,0 +1,24 @@
+.input__login
+{
+    margin-bottom: 15px;
+}
+
+.botao__login
+{
+    margin-top: 0;
+}
+
+.input__login__designer {
+    width: 100%;
+    box-sizing: border-box;
+}
+#toggle-password {
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.password-container {
+    position: relative;
+  }

@@ -1,0 +1,102 @@
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #18783E;
+    box-shadow: inset 0 0 2em rgb(2, 45, 31);
+    margin-top: 1em;
+    padding: 1.5em;
+}
+
+.menu__card
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.menu__imagem
+{
+    width: 300px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+    border-radius: 5px;
+}
+
+.menu__titulo
+{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5em;
+    margin-top: 10px;
+}
+
+.menu__texto
+{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5em;
+}
+
+.card 
+{
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5em;
+}
+
+.menu__button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(255, 3, 41);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(148, 0, 22) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+   }
+   
+   .menu__button:active {
+    background-color: rgb(255, 0, 38);
+    /*50, 168, 80*/
+    box-shadow: rgb(130, 1, 21) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+   }
+
+   .card__imagem
+   {
+    position: relative;
+   }
+
+   .favorito 
+   {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    background-color: rgba(132, 145, 155, 0);
+    border: none;
+   }
