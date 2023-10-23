@@ -1,4 +1,4 @@
-let apiZap = "https://api.whatsapp.com/send?phone=5511947323069&text="
+let apiZap = "https://api.whatsapp.com/send?phone=&text="
 
 function fecharCompra() {
     let mensagem = pedido();
@@ -9,9 +9,14 @@ function fecharCompra() {
 }
  
 function pedido() {
+    let cliente = JSON.parse(localStorage.getItem("cliente_logado"))
     let carrinhoEmTexto = localStorage.getItem("carrinho_pizzaria")
     let carrinho = JSON.parse(carrinhoEmTexto)
-    let mensagem = "Boa noite! Meu pedido é: " 
+    let mensagem = "Cliente: " + cliente.nome
+    mensagem += "\n Endereço: " + cliente.endereco
+    mensagem += "\n Telefone: " + cliente.telefone
+    mensagem += "\n\n Pedido: "
+
 
     for (let index = 0; index < carrinho.length; index++) {
         const itemCarrinho = carrinho[index];

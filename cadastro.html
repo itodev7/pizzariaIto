@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container__cabecalho">
+            <div class="cabecalho__logo">
+                <a href="index.html"><i class="fa fa-rebel fa-3x icone__cor" aria-hidden="true"></i></a>
+            </div>
+            <div class="cabecalho__icones">
+                <div class="avatar__usuario">
+                    <a href="./login.html"><i class="fa fa-user-circle-o fa-3x icone__cor" aria-hidden="true"></i></a>
+                    <span class="nome__login"></span>
+                </div>
+                <a href="./favoritos.html"><i class="fa fa-heart-o fa-3x icone__cor" aria-hidden="true"></i> </a>
+                <div class="carrinho" id="myBtn">
+                    <span class="carrinho__contador">0</span>
+                    <i class="fa fa-shopping-cart fa-3x icone__cor" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="cabecalho__links">
+    </div>
+
+    <section class="container__login">
+
+        <div class="phoneContainer">
+            <div class="screen">
+                <div class="camera"></div>
+                <div class="login__conteudo">
+                    <h1 class="titulo__login">CLIENTE</h1>
+                    <form action="">
+                    <div class="input__login">
+                        <label for="nome">Nome</label>
+                        <input placeholder="Maria de Fátima da Silva" class="input__login__designer" type="text" id="nome">
+                    </div>
+                    <div class="input__login">
+                        <label for="endereco">Endereço</label>
+                        <input placeholder="R. Póvoa de Varzim, 155" class="input__login__designer" type="text" id="endereco">
+                    </div>
+                    <div class="input__login">
+                        <label for="telefone">Telefone</label>
+                        <input placeholder="+55 11 99999 9999" class="input__login__designer" type="text" id="telefone">
+                    </div>
+                    <div class="input__login">
+                        <label for="email">Email</label>
+                        <input placeholder="email@email.com" class="input__login__designer" type="text" id="email">
+                    </div>
+                    <div class="input__login">
+                        <label for="senha">Senha</label>
+                          <div class="password-container">
+                            <input class="input__login__designer"  type="password" id="password-input" placeholder="xxxxxx">
+                            <i class="fa fa-eye-slash" id="toggle-password"></i>
+                          </div>
+                    </div>
+                    <div class="botao__login">
+                        <button class="menu__button" onclick="atualizar()" type="button" >Atualizar dados</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div>
+                <p class="footer__texto">Gabriel Ito desenvolvimento de software LTD.</p>
+            </div>
+            <div>
+                <p class="titulo__redes">Redes sociais:</p>
+            </div>
+            <div class="container__redes">
+                <a href="#"><i class="fa fa-instagram fa-4x redes"  aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-facebook-square fa-4x redes" aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-whatsapp fa-4x redes" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="scripts/cadastro.js"></script>
+</html>
+
+
+  

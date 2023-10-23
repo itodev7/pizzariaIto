@@ -82,3 +82,9 @@
     font-weight: 600;
     
 }
+
+.button__Avatar 
+{
+ border: none;
+ background-color: #ffffff00;
+}
